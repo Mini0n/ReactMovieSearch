@@ -1,3 +1,43 @@
+:root {
+  /* === COLORS === */
+  --color1: #04030e;
+  --color2: #715ff0;
+  --color3: #3324af;
+  --color4: #1d175e;
+  --color5: #4131cf;
+  --color6: #54202a;
+  --color7: #d21c3d;
+
+  /* == Whitish ==*/
+  /* --color-txt: #ffffff; */
+  /* --color-txt: #fffff0; */
+  --color-txt: #e6e6fa;
+  /* --color-txt: #dcdcdc; */
+
+  /* --color-txt: #fffafa; */
+  /* --color-txt: #fffaf0; */
+  /* --color-txt: #fff5ee; */
+  /* --color-txt: #fff0f5; */
+  /* --color-txt: #ffe4e1; */
+  /* --color-txt: #f8f8ff; */
+  /* --color-txt: #f5fffa; */
+  /* --color-txt: #f5f5f5; */
+  /* --color-txt: #f0ffff; */
+  /* --color-txt: #f0f8ff; */
+
+  /* --color-txt: #c0c0c0; */
+  /* --color-txt: #b0c4de; */
+
+  /* == Pinkish == */
+
+  /* --color-txt: #dda0dd; */
+  /* --color-txt: #da70d6; */
+  /* --color-txt: #d8bfd8; */
+  /* --color-txt: #9370db; */
+
+  /* --colort-txt: #1d175e; */
+}
+
 html {
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,8 +50,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #2b2d42;
-  color: #a3a5c3;
+  background-color: var(--color1);
+  color: var(--color-txt);
 }
 
 p {
@@ -26,7 +66,7 @@ small {
   margin: 0 auto;
   max-width: 1000px;
   padding: 20px 40px 40px 40px;
-  border: 1px solid #947eb0;
+  border: 1px solid var(--color4);
 }
 
 .title {
@@ -34,12 +74,44 @@ small {
   text-align: center;
 }
 
-/*
-=== COLORS ===
+.form {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+}
 
-#2b2d42, Space Cadet (Background)
-#0c7489, Teal Blue
-#947eb0, Purple Mountain Majesty
-#a3a5c3, Blue Yonder (text)
-#d72638  Amaranth red
-*/
+.form > * {
+  font-size: 1.5rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.input {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid var(--color4);
+  background-color: var(--color4);
+  color: var(--color2);
+}
+
+.input::placeholder {
+  color: var(--color2);
+  opacity: 0.6;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.button {
+  border-radius: 20px;
+  border: 1px solid var(--color4);
+  background-color: var(--color4);
+  color: var(--color-txt);
+  padding: 0rem 1.5rem;
+}
