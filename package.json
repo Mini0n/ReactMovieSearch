@@ -1,0 +1,25 @@
+{
+  "name": "reactmoviesearch",
+  "version": "1.0.0",
+  "description": "Search Movies in TMDB with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mini0n/ReactMovieSearch.git"
+  },
+  "keywords": [
+    "react",
+    "tmdb",
+    "movie",
+    "search"
+  ],
+  "author": "mini0n",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mini0n/ReactMovieSearch/issues"
+  },
+  "homepage": "https://github.com/Mini0n/ReactMovieSearch#readme"
+}
